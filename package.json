@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development --env development",
-    "build": "webpack --config webpack.config.js --watch",
+    "build": "webpack --config webpack.config.js",
     "start": "npx serve -s build -l 4000"
   },
   "keywords": [
