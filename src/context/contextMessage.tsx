@@ -24,7 +24,7 @@ export class AppContextProvider extends React.Component {
 
   constructor(props: any) {
     super(props);
-    this.manager = new Manager(String(process.env.REACT_APP_URL));
+    this.manager = new Manager('https://informate-fci.herokuapp.com/');
     this.socketIO = this.manager.socket("/");
     
     this.state = {
