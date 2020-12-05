@@ -8,7 +8,7 @@
     "dev": "webpack serve --mode development --env development",
     "build": "webpack --config webpack.config.js --watch",
     "postinstall": "npm run start",
-    "start": "npx serve -s build -l 4000"
+    "start": "npx serve -s build"
   },
   "keywords": [
     "divulgacion",
