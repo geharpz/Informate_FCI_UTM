@@ -6,7 +6,7 @@ export class MessageActions {
     skip: number
   ): Promise<any> {
     await fetch(
-      process.env.REACT_APP_URL + "api/mensaje/" + id_group + "/" + skip + "/50"
+     "https://informate-fci.herokuapp.com/api/mensaje/" + id_group + "/" + skip + "/50"
     )
       .then((res) => {
         return res.json();
@@ -24,8 +24,7 @@ export class MessageActions {
     props: any
   ): Promise<any> {
     await fetch(
-      process.env.REACT_APP_URL +
-        "api/mensaje/ultimoMensaje/" +
+      "https://informate-fci.herokuapp.com/api/mensaje/ultimoMensaje/" +
         props.id_usuario +
         "/" +
         props.id_grupo +
@@ -50,7 +49,7 @@ export class MessageActions {
   }
 
   public async fetchSetMessage(mensaje: any): Promise<void> {
-    await fetch(process.env.REACT_APP_URL + "api/mensaje/", {
+    await fetch("https://informate-fci.herokuapp.com/api/mensaje/", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -61,7 +60,7 @@ export class MessageActions {
       .catch((error) => console.log(error.json()));
   }
   public async fetchPutLastMessage(lastMessge: any): Promise<void> {
-    await fetch(process.env.REACT_APP_URL + "api/mensaje/actualizarID/", {
+    await fetch("https://informate-fci.herokuapp.com/api/mensaje/actualizarID/", {
       headers: {
         "Content-Type": "application/json",
       },

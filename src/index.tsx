@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "./styles.css";
-import "./stylesFCI.css";
+//import "./stylesFCI.css";
 import { App } from "./components/App";
 
 
