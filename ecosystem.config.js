@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
-    name:'informate-fci',
-    script: './build/src/index.js',
+    name:'informate-fci-client',
+    script: './build/bundle.js',
     watch: '.',
     env: {
       NODE_ENV: "development",
