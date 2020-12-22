@@ -28,7 +28,7 @@ var UIMessages = (function (_super) {
     function UIMessages(props) {
         var _this = _super.call(this, props) || this;
         _this.state = {
-            id_usuario: 3,
+            id_usuario: 1,
             id_grupo: 0,
             group: "",
             foto: "",

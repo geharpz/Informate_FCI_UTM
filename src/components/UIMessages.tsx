@@ -8,7 +8,7 @@ Groups.contextType = AppContext;
 
 export class UIMessages extends React.Component {
   state = {
-    id_usuario: 3,
+    id_usuario: 1,
     id_grupo: 0,
     group: "",
     foto: "",
