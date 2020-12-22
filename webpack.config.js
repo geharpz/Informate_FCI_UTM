@@ -36,7 +36,7 @@ module.exports = {
             template: 'public/index.html'
         }),
         new MiniCssExtractPlugin({ filename: 'style.css',
-        chunkFilename: "styles.css" }),
+        chunkFilename: "styles.css"}),
         new Dotenv({path:'./.env.local'}),
     ],devServer: {
         port:process.env.PORT | 4000,

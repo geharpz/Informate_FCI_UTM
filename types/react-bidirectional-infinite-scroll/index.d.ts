@@ -1,0 +1,1 @@
+declare module 'react-bidirectional-infinite-scroll'
