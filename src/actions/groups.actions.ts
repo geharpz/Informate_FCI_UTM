@@ -1,7 +1,6 @@
 export class GroupsActions {
   public async fetchGetGrups(criterio: any, skip: number): Promise<void> {
-    await fetch(
-      process.env.REACT_APP_URL + "api/grupo/" + criterio + "/" + skip
+    await fetch("https://informate-fci.herokuapp.com/api/grupo/" + criterio + "/" + skip
     )
       .then((res) => res.json())
       .then((data) => {
@@ -11,8 +10,7 @@ export class GroupsActions {
   }
 
   public async fetchGetGrupsUser(id_user:number,state:any,callback:Function): Promise<void> {
-    await fetch(
-      process.env.REACT_APP_URL + "api/grupo/" + id_user
+    await fetch("https://informate-fci.herokuapp.com/api/grupo/" + id_user
     )
       .then((res) => res.json())
       .then((data) => {
