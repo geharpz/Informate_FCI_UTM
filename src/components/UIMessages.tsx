@@ -12,8 +12,8 @@ export class UIMessages extends React.Component {
     id_grupo: 0,
     group: "",
     foto: "",
-    user: "Emilio",
-    tipo_usuario: "PROFESOR",
+    user: "geharpz",
+    tipo_usuario: "ESTUDIANTE",
   };
 
   constructor(props: any) {
@@ -63,7 +63,7 @@ export class UIMessages extends React.Component {
           <div className="grid col-span-8 border border-solid border-blackO-100 ">
             <div className="contMVoid w-full row-span-11">
               <div>
-                <img src="../public/Img/fci.png" alt="Escudo de FCI" />
+                <img src="../../public/Img/fci.png" alt="Escudo de FCI" />
               </div>
             </div>
           </div>
