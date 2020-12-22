@@ -33,7 +33,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: 'public/index.html'
+            template: 'index.html'
         }),
         new MiniCssExtractPlugin({ filename: 'style.css',
         chunkFilename: "styles.css"}),
